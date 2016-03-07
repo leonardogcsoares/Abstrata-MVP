@@ -1,0 +1,51 @@
+<div id="mvp-one-container-home" class="container" layout="column">
+
+    <md-content>
+        <md-toolbar class="mvp-one-toolbar md-whiteframe-z2">
+            <div class="md-toolbar-tools" layout="row">
+                <img src="media/img/logo.png">
+            </div>
+        </md-toolbar>
+    </md-content>
+
+    <div layout="column" layout-gt-sm="row" flex="">
+        <div flex="40" layout-align="center center">
+            <md-content style="background-color: transparent" layout-padding="">
+                <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: SansSerif; color: #232526;;">Deixa a matemática guiar seus investimentos.</h1>
+            </md-content>
+        </div>
+
+        <div flex="60" style="margin-top: 48px">
+            <angular-chart layout-align="center center"></angular-chart>
+        </div>
+    </div>
+    <!--<span flex></span>-->
+    <div layout="row" layout-align="center center">
+        <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')" aria-label="Scroll to About Product">
+            <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
+        </md-button>
+    </div>
+</div>
+<div id="mvp-one-container-about-product" class="container" layout="column">
+
+    <span flex=""></span>
+    <div layout="row" layout-align="center center">
+        <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-us')" aria-label="Scroll to About Product">
+            <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
+        </md-button>
+    </div>
+</div>
+
+<div id="mvp-one-container-about-us" class="container" layout="column">
+
+    <span flex=""></span>
+    <div layout="row" layout-align="center center">
+        <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')" aria-label="Scroll to About Product">
+            <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
+        </md-button>
+    </div>
+</div>
+
+<div id="mvp-one-container-contact-us" class="container">
+
+</div>

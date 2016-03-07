@@ -1,0 +1,36 @@
+md-toolbar {
+  background: linear-gradient(#414345, #232526);
+}
+.md-toolbar-tools {
+  margin: auto 0;
+}
+.md-toolbar-tools img {
+  height: 64px;
+  width: auto;
+}
+#mvp-one-container-home {
+  background: white;
+}
+#mvp-one-container-home md-content {
+  background-color: transparent;
+}
+.mvp-one-toolbar {
+  height: 100px;
+  background-color: transparent !important;
+  color: transparent;
+}
+.down-arrow-icon {
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+md-button:hover {
+  background-color: transparent;
+}
+#mvp-one-container-about-product {
+  background: linear-gradient(top, #414345, #232526);
+}
+#mvp-one-container-contact-us {
+  background-color: whitesmoke;
+}

@@ -19,3 +19,6 @@ angular
 angular:angular-material
 sebastianilves:angular-chart-js
 less
+angularui:angular-ui-router
+planettraining:material-design-icons
+johnar:angular-scroll
