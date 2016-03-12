@@ -101,9 +101,11 @@
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze-tools/1.0.4/web.browser/preamble.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.4/web.browser/pre.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.4/web.browser/post.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/chrisbutler_typed.js/1.1.1/web.browser/packages/chrisbutler_typed.js.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/url/1.0.5/web.browser/url_common.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/url/1.0.5/web.browser/url_client.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/webapp/1.2.3/web.browser/webapp_client.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/mrt_jquery-easing/1.3.0/web.browser/packages/mrt_jquery-easing.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/callback-hook/1.0.4/web.browser/hook.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/check/1.1.0/web.browser/match.js" />
         <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/dburles_mongo-collection-instances/0.3.4/web.browser/packages/dburles_mongo-collection-instances.js" />
@@ -224,9 +226,11 @@
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze-tools/1.0.4/web.browser/preamble.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.4/web.browser/pre.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/1.0.4/web.browser/post.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/chrisbutler_typed.js/1.1.1/web.browser/packages/chrisbutler_typed.js.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/url/1.0.5/web.browser/url_common.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/url/1.0.5/web.browser/url_client.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/webapp/1.2.3/web.browser/webapp_client.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/mrt_jquery-easing/1.3.0/web.browser/packages/mrt_jquery-easing.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/callback-hook/1.0.4/web.browser/hook.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/check/1.1.0/web.browser/match.js" />
       <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/dburles_mongo-collection-instances/0.3.4/web.browser/packages/dburles_mongo-collection-instances.js" />

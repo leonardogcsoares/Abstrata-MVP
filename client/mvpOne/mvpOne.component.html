@@ -1,5 +1,5 @@
 <div id="mvp-one-container-home" class="container" layout="column">
-
+    <div id="background-home"></div>
     <md-content>
         <md-toolbar class="mvp-one-toolbar md-whiteframe-z2">
             <div class="md-toolbar-tools" layout="row">
@@ -8,19 +8,17 @@
         </md-toolbar>
     </md-content>
 
-    <div layout="column" layout-gt-sm="row" flex="">
-        <div flex="40" layout-align="center center">
+    <div layout="column" layout-gt-sm="row" flex="" layout-align="center center" style="z-index: 10">
+        <div flex="70">
             <md-content style="background-color: transparent" layout-padding="">
-                <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: SansSerif; color: #232526;;">Deixa a matemática guiar seus investimentos.</h1>
+                <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
+                    Deixa a <span id="typed-changing">matemática</span> guiar seus investimentos.
+                </h1>
             </md-content>
-        </div>
-
-        <div flex="60" style="margin-top: 48px">
-            <angular-chart layout-align="center center"></angular-chart>
         </div>
     </div>
     <!--<span flex></span>-->
-    <div layout="row" layout-align="center center">
+    <div layout="row" layout-align="center center" style="z-index: 10">
         <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')" aria-label="Scroll to About Product">
             <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
         </md-button>

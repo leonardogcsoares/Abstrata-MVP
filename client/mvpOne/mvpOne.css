@@ -1,5 +1,5 @@
 md-toolbar {
-  background: linear-gradient(#414345, #232526);
+  background: transparent;
 }
 .md-toolbar-tools {
   margin: auto 0;
@@ -9,10 +9,62 @@ md-toolbar {
   width: auto;
 }
 #mvp-one-container-home {
-  background: white;
+  background: transparent;
+  z-index: 10;
+}
+#mvp-one-container-home #background-home {
+  background-image: url(/media/img/math-background.jpg);
+  background-size: cover;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
 }
 #mvp-one-container-home md-content {
   background-color: transparent;
+}
+#typed-changing {
+  color: #3F51B5;
+}
+.typed-cursor {
+  opacity: 1;
+  color: #3F51B5;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .mvp-one-toolbar {
   height: 100px;
