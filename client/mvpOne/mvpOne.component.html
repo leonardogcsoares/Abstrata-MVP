@@ -1,5 +1,4 @@
 <div id="mvp-one-container-home" class="container" layout="column">
-    <div id="background-home"></div>
     <md-content>
         <md-toolbar class="mvp-one-toolbar md-whiteframe-z2">
             <div class="md-toolbar-tools" layout="row">
@@ -8,15 +7,36 @@
         </md-toolbar>
     </md-content>
 
-    <div layout="column" layout-gt-sm="row" flex="" layout-align="center center" style="z-index: 10">
-        <div flex="70">
-            <md-content style="background-color: transparent" layout-padding="">
-                <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
-                    Deixa a <span id="typed-changing">matemática</span> guiar seus investimentos.
-                </h1>
-            </md-content>
-        </div>
+    <div class="background-home" style="background: #fddfad;"></div>
+
+    <div id="main-page-carousel" class="carousel slide carousel-fade" data-ride="carousel" layout="column" flex>
+            <div class="carousel-inner" flex>
+                <div class="item active">
+                    <md-content style="background-color: transparent; z-index: 10;" layout-padding="">
+                        <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
+                            Deixa a matemática guiar <br>seus investimentos.
+                        </h1>
+                    </md-content>
+                </div>
+
+                <!--<div class="item">-->
+                    <!--<md-content style="background-color: transparent" layout-padding="">-->
+                        <!--<h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">-->
+                            <!--Deixa a análise de dados guiar <br> seus investimentos.-->
+                        <!--</h1>-->
+                    <!--</md-content>-->
+                <!--</div>-->
+
+                <!--<div class="item">-->
+                    <!--<md-content style="background-color: transparent" layout-padding="">-->
+                        <!--<h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">-->
+                            <!--Deixa a estatística guiar <br>seus investimentos.-->
+                        <!--</h1>-->
+                    <!--</md-content>-->
+                <!--</div>-->
+            </div>
     </div>
+
     <!--<span flex></span>-->
     <div layout="row" layout-align="center center" style="z-index: 10">
         <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')" aria-label="Scroll to About Product">

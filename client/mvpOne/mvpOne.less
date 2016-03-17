@@ -11,14 +11,49 @@ md-toolbar {
 }
 
 /////////////////////////
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    z-index: 2;
+  }
+}
+
 #mvp-one-container-home {
   background: transparent;
   z-index: 10;
 
-  #background-home {
-    background-image: url(/media/img/math-background.jpg);
+  .background-home {
+    //background-image: url(/media/img/math-background.jpg);
     background-size: cover;
     position: absolute;
+    top: 0;
+    left: 0;
     height: 100vh;
     width: 100%;
     z-index: 1;
