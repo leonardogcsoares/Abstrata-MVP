@@ -10,28 +10,45 @@ angular.module('abstrata').directive('mvpOne', function () {
                     0, 500);
            };
 
+           // Resposible for the self-typing script on the main page.
            $(function () {
+               var i = 0;
+               const MATH  = 0;
+               const STATISTICS = 1;
+               //const DATA = 2;
                $("#typed-changing").typed({
-                   strings: ['matemática', 'estatística', 'analise de dados'],
+                   strings: ['matemática^1000', 'estatística^1000', 'analise de dados^1000'],
+                   backgrounds: ['#000000', "#ababab", "fbfbfb"],
                    typeSpeed: 25,
                    loop: true,
                    backDelay: 2000,
                    showCursor: false,
                    preStringTyped: function () {
-                     console.log("Before typing given string");
-                   },
-                   onStringTyped: function () {
-                       // var currentText = $("#typed-changing").text().toString();
-                       // var nextBackgroundToLoad = currentText === this.strings[0] ? "url(/media/img/math-background.jpg)" :
-                       //      currentText === this.strings[1] ? "url(/media/img/statistics-background.jpg)" : "url(/media/img/data-background.jpg)";
-                       // $("#background-home").fadeOut("slow", function () {
-                       //     $("#background-home").css("background-image", nextBackgroundToLoad);
-                       //     $("#background-home").fadeIn("slow");
-                       // });
+                       i = i === 3 ? MATH : i;
 
+                       var backgroundMath = $("#background-home.math");
+                       var backgroundStatistics = $("#background-home.statistics");
+                       var backgroundData = $("#background-home.data");
+                       if (i === MATH) {
+                           backgroundMath.removeClass("transparent");
+                           backgroundStatistics.addClass("transparent");
+                           backgroundData.addClass("transparent");
+                           $('#typed-changing').css("color", "#3F51B5");
+                       }
+                       else if (i === STATISTICS) {
+                           backgroundMath.addClass("transparent");
+                           backgroundStatistics.removeClass("transparent");
+                           //backgroundData.addClass("transparent");
+                           $('#typed-changing').css("color", "lightcoral");
+                       }
+                       else {
+                           //backgroundMath.addClass("transparent");
+                           backgroundStatistics.addClass("transparent");
+                           backgroundData.removeClass("transparent");
+                           $('#typed-changing').css("color", "lightgreen");
+                       }
+                       i++;
                    }
-
-
                });
            });
            

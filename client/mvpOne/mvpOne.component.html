@@ -1,48 +1,34 @@
-<div id="mvp-one-container-home" class="container" layout="column">
-    <md-content>
-        <md-toolbar class="mvp-one-toolbar md-whiteframe-z2">
-            <div class="md-toolbar-tools" layout="row">
-                <img src="media/img/logo.png">
-            </div>
-        </md-toolbar>
+<div id="mvp-one-container-home" layout="column">
+
+    <md-toolbar id="toolbar-content" class="mvp-one-toolbar md-whiteframe-z2" md-medium-tall="true">
+        <div class="md-toolbar-tools" layout="row">
+            <img src="media/img/logo.png">
+            <span flex></span>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')">Product</a>
+            <span flex></span>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-us')">About Us</a>
+            <span flex></span>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')">Contact Us</a>
+            <span flex></span>
+        </div>
+    </md-toolbar>
+
+    <div id="background-home" class="math"></div>
+    <div id="background-home" class="statistics transparent"></div>
+    <div id="background-home" class="data transparent"></div>
+    <div id="background-home" class="black"></div>
+
+    <md-content style="background-color: transparent; margin: 30vh 0;" layout-padding="" flex>
+        <h1 style="font-size: 84px; font-weight: 600; font-style: normal; font-family: MuseoSans300; color: #fff; text-align: center; ">
+            Deixa a <span id="typed-changing" style="font-weight: 800">matemática</span> guiar <br>seus investimentos.
+        </h1>
     </md-content>
 
-    <div class="background-home" style="background: #16fde9;"></div>
-
-    <div id="main-page-carousel" class="carousel slide carousel-fade" data-ride="carousel" layout="column" flex style="z-index: 10">
-            <div class="carousel-inner" flex>
-                <div class="item active">
-                    <md-content style="background-color: transparent;" layout-padding="">
-                        <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
-                            Deixa a matemática guiar <br>seus investimentos.
-                        </h1>
-                    </md-content>
-                </div>
-
-                <div class="item">
-                    <md-content style="background-color: transparent;" layout-padding="">
-                        <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
-                            Deixa a análise de dados guiar <br> seus investimentos.
-                        </h1>
-                    </md-content>
-                </div>
-
-                <div class="item">
-                    <md-content style="background-color: transparent;" layout-padding="">
-                        <h1 style="font-size: 70px; font-weight: bold; font-style: normal; font-family: MuseoSans300; color: #232526; text-align: center">
-                            Deixa a estatística guiar <br>seus investimentos.
-                        </h1>
-                    </md-content>
-                </div>
-            </div>
-    </div>
-
-    <!--<span flex></span>-->
-    <div layout="row" layout-align="center center" style="z-index: 10">
-        <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')" aria-label="Scroll to About Product">
-            <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
-        </md-button>
-    </div>
+    <!--<div layout="row" layout-align="center center" style="z-index: 10">-->
+        <!--<md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')" aria-label="Scroll to About Product">-->
+            <!--<md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>-->
+        <!--</md-button>-->
+    <!--</div>-->
 </div>
 <div id="mvp-one-container-about-product" class="container" layout="column">
 

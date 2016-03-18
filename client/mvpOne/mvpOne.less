@@ -1,12 +1,25 @@
-md-toolbar {
-  //background: linear-gradient(#414345, #232526);
-  background: transparent;
+#toolbar-content{
+  background: rgba(0, 0, 0, 0.5) !important;
 }
+
 .md-toolbar-tools {
+  z-index: 10;
   margin: auto 0;
 
   img {
     height: 64px; width: auto;
+  }
+
+  a {
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  a:hover {
+    text-decoration: blink;
+    font-weight: 900;
+    color: white;
   }
 }
 
@@ -48,11 +61,18 @@ md-toolbar {
   }
 }
 
-#mvp-one-container-home {
-  background: transparent;
-  z-index: 10;
 
-  .background-home {
+#mvp-one-container-home {
+
+  height: 100vh;
+
+  #background-home div.opaque {
+    opacity:1;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=1);
+  }
+
+  #background-home {
     //background-image: url(/media/img/math-background.jpg);
     background-size: cover;
     position: absolute;
@@ -61,10 +81,36 @@ md-toolbar {
     height: 100vh;
     width: 100%;
     z-index: 1;
+
+    // TRANSITION //
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #background-home.transparent {
+    opacity: 0;
+  }
+
+  #background-home.math {
+    background-image: url('/media/img/Quadro_negro.jpg');
+  }
+
+  #background-home.statistics {
+    background-image: url('/media/img/Vitral.jpg');
+  }
+
+  #background-home.data {
+    background-image: url('/media/img/Market3.jpg');
+  }
+
+  #background-home.black {
+    background: rgba(0, 0, 0, 0.55);
   }
 
   md-content {
-    background-color: transparent;
+    z-index: 10;
   }
 }
 @colorTypedChanging: #3F51B5;
@@ -99,8 +145,6 @@ md-toolbar {
 
 .mvp-one-toolbar {
   height: 100px;
-  background-color: transparent !important;
-  color: transparent;
 }
 
 .down-arrow-icon {
