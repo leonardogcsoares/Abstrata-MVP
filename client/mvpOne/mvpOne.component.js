@@ -19,7 +19,7 @@ angular.module('abstrata').directive('mvpOne', function () {
                $("#typed-changing").typed({
                    strings: ['matemática^1000', 'estatística^1000', 'analise de dados^1000'],
                    backgrounds: ['#000000', "#ababab", "fbfbfb"],
-                   typeSpeed: 25,
+                   typeSpeed: 45,
                    loop: true,
                    backDelay: 2000,
                    showCursor: false,
