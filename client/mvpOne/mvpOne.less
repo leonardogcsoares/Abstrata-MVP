@@ -12,7 +12,7 @@
 
   a {
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
     cursor: pointer;
   }
 
@@ -162,7 +162,9 @@ md-button:hover {
 
 //////////////////////////////
 #mvp-one-container-about-product {
-  background: linear-gradient(top, #414345, #232526);
+  //background: linear-gradient(top, #414345, #232526);
+  background-image: linear-gradient(whitesmoke, white);
+  background-size: cover;
 }
 
 .product-container {
@@ -171,19 +173,71 @@ md-button:hover {
 
   md-icon {
     height: 256px;
-    width: auto;
-    margin: 0;
+    width: 256px !important;
+    margin: auto;
   }
 
   p {
     align-self: center;
     margin-right: 32px;
+    text-align: justify;
+    color: #394b59;
   }
 }
 
 
 /////////////////////////////
 
+#mvp-one-container-about-us {
+  background-image: linear-gradient(#394b59, #142938);
+  background-size: cover;
+  color: white;
+
+  h1 {
+    text-align: justify;
+  }
+
+
+}
+
+////////////////////////////
+
 #mvp-one-container-contact-us {
-  background-color: whitesmoke;
+  //background-color: #394b59;
+  background-image: url('media/img/contact-background.jpeg');
+  background-size: cover;
+  color: white;
+
+  h1 {
+    font-size: 52px;
+  }
+
+  p {
+    font-size: 24px;
+  }
+  
+  md-input-container {
+    margin-top: 48px;
+    min-width: 500px;
+
+    label {
+      color: white;
+      font-size: 24px;
+    }
+
+    input {
+      color: white;
+      font-size: 24px;
+      border-color: white;
+
+    }
+  }
+
+  .md-button {
+    background-color: white;
+    color: #394b59;
+    font-size: 18px;
+    padding: 8px;
+  }
+
 }

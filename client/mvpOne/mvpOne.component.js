@@ -52,7 +52,9 @@ angular.module('abstrata').directive('mvpOne', function () {
                });
            });
            
-           
+           this.sendUserEmailToList = function (userEmail) {
+               Meteor.call('addEmail', userEmail);
+           };
        }
    }
 });

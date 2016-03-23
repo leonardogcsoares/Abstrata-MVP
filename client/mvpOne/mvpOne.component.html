@@ -4,11 +4,11 @@
         <div class="md-toolbar-tools" layout="row">
             <img src="media/img/logo.png">
             <span flex></span>
-            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')">Product</a>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-product')">Produto</a>
             <span flex></span>
-            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-us')">About Us</a>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-about-us')">Sobre Nós</a>
             <span flex></span>
-            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')">Contact Us</a>
+            <a flex="10" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')">Entre em Contato</a>
             <span flex></span>
         </div>
     </md-toolbar>
@@ -65,6 +65,24 @@
 
 <div id="mvp-one-container-about-us" class="container" layout="column">
 
+    <div flex="20" style="margin-top: 100px">
+        <h1 style="font-size: 84px; font-weight: 600; font-style: normal; font-family: MuseoSans300; text-align: center; ">
+            Sobre Nós
+        </h1>
+    </div>
+
+    <div layout="row" layout-align="center center">
+        <div layout="row" flex="70" layout-padding class="product-container">
+            <h1>Nos juntamos em agosto de 2014 para iniciar pesquisas em dados do mercado
+                financeiro. Após um ano e meio de trabalho construímos algoritmos de predição, risco,
+                execução e gestão de capital para a bolsa de valores brasileira.
+                Fazemos uma análise quantitativa dos dados do mercado financeiro utilizando
+                técnicas estatísticas, modelagem matemática e inteligência artificial. A Orizon é o
+                resultado deste trabalho intenso. Estamos disponibilizando agora parte de nossas
+                pesquisas para outros traders e investidores.</h1>
+        </div>
+    </div>
+
     <span flex=""></span>
     <div layout="row" layout-align="center center">
         <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')" aria-label="Scroll to About Product">
@@ -73,6 +91,17 @@
     </div>
 </div>
 
-<div id="mvp-one-container-contact-us" class="container">
+<div id="mvp-one-container-contact-us" class="container" layout="column">
+
+    <div layout="column" flex="80" layout-offset="10" layout-align="center center">
+        <h1>Deixa aqui o seu contato, para blah blah</h1>
+        <p>Subtexto para dar enfase de deixar o contato</p>
+        <md-input-container>
+            <label>Email for money</label>
+            <input type="text" ng-model="mvpOne.userEmail">
+        </md-input-container>
+
+        <md-button ng-click="mvpOne.sendUserEmailToList(mvpOne.userEmail)">Inscrever sei la</md-button>
+    </div>
 
 </div>
