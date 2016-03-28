@@ -1,5 +1,5 @@
 #toolbar-content{
-  background: rgba(0, 0, 0, 0.5) !important;
+  //background: rgba(0, 0, 0, 0.5) !important;
 }
 
 .md-toolbar-tools {
@@ -94,15 +94,15 @@
   }
 
   #background-home.math {
-    background-image: url('/media/img/Quadro_negro.jpg');
+    background-image: url('/media/img/Vitral.jpg');
   }
 
   #background-home.statistics {
-    background-image: url('/media/img/Market2.jpg');
+    background-image: url('/media/img/Estatistica.jpg');
   }
 
   #background-home.data {
-    background-image: url('/media/img/Market3.jpg');
+    background-image: url('/media/img/StockMarket01.jpg');
   }
 
   #background-home.black {
@@ -165,17 +165,38 @@ md-button:hover {
   //background: linear-gradient(top, #414345, #232526);
   background-image: linear-gradient(whitesmoke, white);
   background-size: cover;
-}
-
-.product-container {
-  height: 300px;
-  font-size: 30px;
+  min-height: 100vh;
+  width: 100%;
 
   md-icon {
     height: 256px;
     width: 256px !important;
     margin: auto;
   }
+
+  img {
+    height: 64px;
+    width: auto;
+    align-self: center;
+    margin-top: 16px;
+  }
+
+  p {
+    align-self: center;
+    font-size: 22px;
+  }
+
+  h4 {
+    align-self: center;
+    font-size: 22px;
+  }
+}
+
+.product-container {
+  height: 300px;
+  font-size: 30px;
+
+
 
   p {
     align-self: center;
@@ -229,7 +250,12 @@ md-button:hover {
       color: white;
       font-size: 24px;
       border-color: white;
+    }
 
+    textarea {
+      color: white;
+      font-size: 24px;
+      border-color: white;
     }
   }
 
