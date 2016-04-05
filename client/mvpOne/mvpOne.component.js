@@ -51,7 +51,7 @@ angular.module('abstrata').directive('mvpOne', function () {
                    }
                });
            });
-           
+
            this.sendUserEmailToList = function (username, userEmail, userMessage) {
                Meteor.call('addEmail', username, userEmail, userMessage);
                this.username = "";

@@ -1,0 +1,34 @@
+<div id="product-page-container" layout="column">
+
+    <md-toolbar id="toolbar-content" class="mvp-one-toolbar md-whiteframe-z2" md-medium-tall="true">
+        <div class="md-toolbar-tools" layout="row">
+            <img src="media/img/logo.png">
+            <span flex></span>
+        </div>
+    </md-toolbar>
+
+    <div style="margin-top: 100px; margin-left: 15vw">
+        <h1 style="font-size: 100px; font-weight: 600; font-style: normal; font-family: MuseoSans300; text-align: start;">
+            Entendemos a sua <br>pressa!
+        </h1>
+    </div>
+
+    <div style="margin-left: 15vw; margin-right: 20vw; margin-top: 48px; font-size: 24px">
+        <p>Estamos trabalhando o mais rápido possível para deixar nossa platforma pronta para uso. Se estiver muito ansioso igual nós,
+            deixe seu email logo abaixo que te avisamos assim que a plataforma estiver pronta!</p>
+    </div>
+
+    <div style="margin-left: 15vw; width: 30vw; margin-top: 48px;" layout="column">
+        <md-input-container>
+            <label>Nome</label>
+            <input type="text" ng-model="productPage.username">
+        </md-input-container>
+        <md-input-container>
+            <label>Email</label>
+            <input type="text" ng-model="productPage.userEmail">
+        </md-input-container>
+    </div>
+
+    <md-button ng-click="productPage.sendUserEmailToList(productPage.username, productPage.userEmail, 'Interessado em saber mais sobre nossa plataforma')"
+               class="md-raised more-info-button" style="margin-left: 15vw; background-color: black; color: white; align-self: flex-start">Me deixa atualizado!</md-button>
+</div>

@@ -16,42 +16,51 @@
     <div id="background-home" class="data transparent"></div>
     <div id="background-home" class="black"></div>
 
-    <md-content style="background-color: transparent; margin: 30vh 0;" layout-padding="" flex>
+    <md-content style="background-color: transparent; margin-top: 30vh; margin-bottom: 15vh" layout-padding="">
         <h1 style="font-size: 84px; font-weight: 600; font-style: normal; font-family: MuseoSans300; color: #fff; text-align: center; ">
             A <span id="typed-changing" style="font-weight: 800">matemática</span> a serviço <br> dos seus investimentos.
         </h1>
     </md-content>
 
+    <md-button ui-sref="/beta" class="md-raised more-info-button">Quero essa plataforma!</md-button>
+
 </div>
 <div id="mvp-one-container-about-product" layout="column" layout-align="center center">
 
 
-    <div flex="15" style="margin-top: 48px; margin-bottom: 48px" layout-align="center center">
+    <div flex="15" style="padding-top: 48px; background-color: black; color: whitesmoke;" layout-align="center center">
         <h1 style="font-size: 84px; font-weight: 600; font-style: normal; font-family: MuseoSans300; text-align: center;">
             Como funciona?
         </h1>
-        <p style="width: 50%; text-align: center; font-size: 20px; margin: 0 auto; border-bottom: solid 1px black; padding-bottom: 16px">Utilizamos do poder da modelagem matemática e estatística, análise de dados e
+        <p style="width: 50%; text-align: center; font-size: 20px; margin: 0 auto; border-bottom: solid 1px whitesmoke; padding-bottom: 16px">Utilizamos do poder da modelagem matemática e estatística, análise de dados e
             inteligência artificial para auxiliar a tomada de decisão a cada momento. Nosso intuito é
             agir como um conselheiro, refinando milhares de dados em tempo real para você</p>
     </div>
-    <div layout="column">
 
-        <img src="media/icones/Line.png" alt="Line">
-        <h4>FERRAMENTAS DE ANÁLISE</h4>
-        <p>Identificamos a atual tendência de um determinado ativo e oferecemos ferramentas para análise desta tendências</p>
+    <div layout="row" style="margin-right: 10%; margin-left: 10%">
+        <div layout="column" flex="50" layout-padding>
+            <img src="media/icones/Line.png" alt="Line">
+            <h4>FERRAMENTAS DE ANÁLISE</h4>
+            <p>Identificamos a atual tendência de um determinado ativo e oferecemos ferramentas para análise desta tendências</p>
 
-        <img src="media/icones/Dna.png" alt="Dna">
-        <h4>ANÁLISE DE TENDÊNCIAS</h4>
-        <p>Acesso a inteligência de máquina e estatística para gerar previsões de movimentos de determinado ativo com alta taxa de acerto.</p>
+            <img src="media/icones/Dna.png" alt="Dna">
+            <h4>ANÁLISE DE TENDÊNCIAS</h4>
+            <p>Acesso a inteligência de máquina e estatística para gerar previsões de movimentos de determinado ativo com alta taxa de acerto.</p>
+        </div>
 
-        <img src="media/icones/Curve.png" alt="Curve">
-        <h4>PROJETANDO O RISCO</h4>
-        <p>Análise de níveis de volatilidade e parametrização da possível dispersão dos preços.</p>
+        <div layout="column" flex="50" layout-padding>
+            <img src="media/icones/Curve.png" alt="Curve">
+            <h4>PROJETANDO O RISCO</h4>
+            <p>Análise de níveis de volatilidade e parametrização da possível dispersão dos preços.</p>
 
-        <img src="media/icones/Graph.png" alt="Graph">
-        <h4>INTENSA VALIDAÇÃO</h4>
-        <p>O resultado de nossas análises são alcançados através de levantamento de hipóteses e comprovação destas por meio de pesquisa e validação.</p>
+            <img src="media/icones/Graph.png" alt="Graph">
+            <h4>INTENSA VALIDAÇÃO</h4>
+            <p>O resultado de nossas análises são alcançados através de levantamento de hipóteses e comprovação destas por meio de pesquisa e validação.</p>
+        </div>
+
     </div>
+
+    <md-button ui-sref="/beta" class="md-raised more-info-button" style="background-color: black; color: white; margin-top: 100px">Me mostra então!</md-button>
 
     <span flex=""></span>
     <div layout="row" layout-align="center center">
@@ -63,17 +72,15 @@
 
 <div id="mvp-one-container-about-us" class="container" layout="column">
 
-    <div flex="15" style="margin-top: 100px">
+    <div flex="25" style="padding-top: 100px; padding-bottom: 48px" layout="column" class="background-divider-white">
         <h1 style="font-size: 84px; font-weight: 600; font-style: normal; font-family: MuseoSans300; text-align: center; ">
             Sobre Nós
         </h1>
 
+        <!--<span style="height: 10px; width: 70%; border-bottom: solid 1px black; align-self: center; margin-bottom: 48px"></span>-->
     </div>
 
-    <span style="height: 10px; width: 70%; border-bottom: solid 1px white; align-self: center"></span>
-    <span flex="5"></span>
-
-    <div layout="row" layout-align="center center">
+    <div layout="row" layout-align="center start" flex="" class="background-divider-black">
         <div layout="row" flex="70" layout-padding class="product-container">
             <h1>Nos juntamos em agosto de 2014 para iniciar pesquisas em dados do mercado
                 financeiro. Após um ano e meio de trabalho construímos algoritmos de predição, risco,
@@ -85,20 +92,19 @@
         </div>
     </div>
 
-    <span flex=""></span>
-    <div layout="row" layout-align="center center">
+    <div layout="row" layout-align="center center" class="background-divider-black">
         <md-button name="down-arrow-home" class="down-arrow-icon" ng-click="mvpOne.onDownArrowClick('mvp-one-container-contact-us')" aria-label="Scroll to About Product">
-            <md-icon md-svg-icon="media/icons/ic_arrow_downward_white_48px.svg"></md-icon>
+            <md-icon md-svg-icon="media/icons/ic_arrow_downward_black_48px.svg"></md-icon>
         </md-button>
     </div>
 </div>
 
 <div id="mvp-one-container-contact-us" class="container" layout="column">
 
-    <div layout="column" flex="80" layout-offset="10" layout-align="center center">
+    <div layout="column" flex="80" layout-offset="10" layout-align="center center" style="margin-top: 48px">
         <h1>Converse Conosco</h1>
         <p style="border-bottom: 1px white solid">Queremos te conhecer melhor</p>
-        <p style="width: 30%; text-align: justify"> Não hesite em entrar em contato conosco. Sendo uma plataforma construída para
+        <p style="text-align: justify; min-width: 500px;">Não hesite em entrar em contato conosco. Sendo uma plataforma construída para
             você, cada dúvida, crítica e sugestão é extremamente importante para nós. Afinal,
             como podemos te atender melhor se ainda não te conhecemos?</p>
 
@@ -107,7 +113,7 @@
             <input type="text" ng-model="mvpOne.username">
         </md-input-container>
         <md-input-container>
-            <label>Email for money</label>
+            <label>Email</label>
             <input type="text" ng-model="mvpOne.userEmail">
         </md-input-container>
         <md-input-container>

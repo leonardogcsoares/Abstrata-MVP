@@ -6,13 +6,17 @@ angular.module('abstrata').config(function ($stateProvider, $urlRouterProvider) 
     $urlRouterProvider.otherwise('/');
 
     $stateProvider
-        .state('/' , {
+        .state('/', {
             url: '/',
-            template: '<angular-chart></angular-chart>'
-        })
-        .state('mvp1', {
-            url: '/mvp1',
             template: '<mvp-one></mvp-one>'
+        })
+        .state('/beta', {
+            url: '/beta',
+            template: '<product-page></product-page>'
+        })
+        .state('/chart' , {
+            url: '/chart',
+            template: '<angular-chart></angular-chart>'
         });
 
 });

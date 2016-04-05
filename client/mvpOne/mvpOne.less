@@ -113,6 +113,15 @@
     z-index: 10;
   }
 }
+
+.more-info-button {
+  z-index: 10;
+  display: inline-block;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 900;
+  padding: 8px;
+}
 @colorTypedChanging: #3F51B5;
 
 #typed-changing {
@@ -163,7 +172,8 @@ md-button:hover {
 //////////////////////////////
 #mvp-one-container-about-product {
   //background: linear-gradient(top, #414345, #232526);
-  background-image: linear-gradient(whitesmoke, white);
+  //background-image: linear-gradient(whitesmoke, white);
+  background-color: white;
   background-size: cover;
   min-height: 100vh;
   width: 100%;
@@ -213,9 +223,22 @@ md-button:hover {
   background-image: linear-gradient(#394b59, #142938);
   background-size: cover;
   color: white;
+  padding: 0;
 
   h1 {
     text-align: justify;
+  }
+
+  .background-divider-black {
+    background-color: black;
+    color: white;
+    border-color: white;
+  }
+
+  .background-divider-white {
+    background-color: white;
+    color: black;
+    border-color: black;
   }
 
 
